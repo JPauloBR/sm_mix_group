@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Name: G{{ group.id }}</h1>
+
+  <p><strong>Name:</strong> G{{ group.id }}</p> 
+  <p><strong>Creation Date:</strong> {{ group.creation_date }}</p> 
+  <p><strong>Expiration Date:</strong> {{ group.expiration_date }}</p> 
+  <p><strong>Group Members:</strong> {{ group.employee_list }}</p> 
+
+
+
+
+{% endblock %}

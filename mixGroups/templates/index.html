@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>JP</title>{% endblock %}
+
+{% block content %}
+<h1>Lunch Fun2</h1>
+
+  <p>Assignment to generate <em>Groups</em>, randomly for employees have lunch together and have fun.</p>
+
+<h2>Dynamic content</h2>
+
+  <p>Some Math here:</p>
+  <ul>
+    <li><strong>Employees:</strong> {{ num_employees }}</li>
+    <li><strong>Groups:</strong> {{ num_groups }}</li>
+    <li><strong>Last Runtime:</strong> {{ last_runtime }}</li>
+    <li><strong>creator_user_id:</strong> {{ creator_user_id }}</li>
+
+    
+
+  </ul>
+
+{% endblock %}

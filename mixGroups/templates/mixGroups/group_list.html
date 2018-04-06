@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Group List</h1>
+
+    {% if group_list %}
+    <ul>
+
+      {% for group in group_list %}
+      <li>
+        <a href="{{ group.get_absolute_url }}">G{{ group.id }}</a> 
+         <span>{{ group.creation_date }}</span>
+         <span>Group id: {{ group.group_id }}</span>
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no groups in the database.</p>
+    {% endif %}   
+
+    <h3><a href="{% url 'runprocess' %}"> >> Generate Group <<</h3>      
+{% endblock %}
